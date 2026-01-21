@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiyatlandırma Tablosu - Pricing Table</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Ana Container -->
+    <section class="pricing-container">
+        <!-- Başlık ve Toggle -->
+        <div class="pricing-header">
+            <h1>Planınızı Seçin</h1>
+            <p class="subtitle">İhtiyaçlarınıza en uygun paketi bulun</p>
+            
+            <!-- Aylık / Yıllık Toggle -->
+            <div class="toggle-container">
+                <span class="toggle-label" id="monthly-label">Aylık</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label active" id="yearly-label">Yıllık <span class="save-badge">%20 İndirim</span></span>
+            </div>
+        </div>
+
+        <!-- Fiyatlandırma Kartları (Grid) -->
+        <div class="pricing-cards">
+            
+            <!-- 1. TEMEL PAKET -->
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h2>Temel</h2>
+                    <p class="plan-description">Bireysel kullanıcılar için</p>
+                </div>
+                
+                <div class="price-container">
+                    <span class="currency">₺</span>
+                    <span class="price" data-monthly="99" data-yearly="950">99</span>
+                    <span class="period">/ay</span>
+                </div>
+                
+                <ul class="features-list">
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        5 Proje
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        10 GB Depolama
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        E-posta Desteği
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Temel Özellikler
+                    </li>
+                </ul>
+                
+                <button class="cta-button">Başla</button>
+            </div>
+
+            <!-- 2. PRO PAKET (Öne Çıkan) -->
+            <div class="pricing-card">
+                <div class="popular-badge">En Popüler</div>
+                <div class="card-header">
+                    <h2>Pro</h2>
+                    <p class="plan-description">Küçük ekipler için</p>
+                </div>
+                
+                <div class="price-container">
+                    <span class="currency">₺</span>
+                    <span class="price" data-monthly="299" data-yearly="2870">299</span>
+                    <span class="period">/ay</span>
+                </div>
+                
+                <ul class="features-list">
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Sınırsız Proje
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        100 GB Depolama
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Öncelikli Destek
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Gelişmiş Analitik
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        API Erişimi
+                    </li>
+                </ul>
+                
+                <button class="cta-button">Başla</button>
+            </div>
+
+            <!-- 3. ENTERPRISE PAKET -->
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h2>Enterprise</h2>
+                    <p class="plan-description">Büyük şirketler için</p>
+                </div>
+                
+                <div class="price-container">
+                    <span class="currency">₺</span>
+                    <span class="price" data-monthly="799" data-yearly="7670">799</span>
+                    <span class="period">/ay</span>
+                </div>
+                
+                <ul class="features-list">
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Sınırsız Her Şey
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Sınırsız Depolama
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        7/24 Destek
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Özel Entegrasyon
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        SLA Garantisi
+                    </li>
+                    <li>
+                        <svg class="check-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                        </svg>
+                        Eğitim & Danışmanlık
+                    </li>
+                </ul>
+                
+                <button class="cta-button">İletişime Geç</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
